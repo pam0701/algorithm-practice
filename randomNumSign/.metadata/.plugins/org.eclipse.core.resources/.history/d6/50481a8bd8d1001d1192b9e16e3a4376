@@ -1,0 +1,24 @@
+package randomNumSign;
+
+import java.util.Scanner;
+
+public class randomNumSign {
+
+	private static Scanner sc;
+
+	public static void main(String[] args) {
+		int num;
+		
+		sc = new Scanner(System.in);
+			System.out.println("숫자를 입력하세요: ");
+			num = sc.nextInt();
+
+		for(int i = 0; i > num; i++) {
+			if(i%2 == 0) {
+				System.out.print('+');	
+			}else {
+				System.out.print('-');
+			}
+		}
+	}
+}
